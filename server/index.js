@@ -73,10 +73,15 @@ app.use("/posts", postRoutes);
 /***************** MONGOOSE DB CONNECT SETUP ********************/
 
 const PORT = process.env.PORT || 6001;
+const URI = process.env.MONGO_URL;
+console.log(URI);
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URL);
+    const conn = await mongoose.connect(URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     console.log(error);
