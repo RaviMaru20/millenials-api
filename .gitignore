@@ -1,0 +1,54 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore package lock files
+package-lock.json
+
+# Ignore environment-specific configuration files
+.env
+
+# Ignore logs and other dynamically created files
+logs/
+*.log
+npm-debug.log*
+
+# Ignore user-specific files
+.idea/
+.vscode/
+
+# Ignore server-specific files
+server/.env
+server/.env.local
+
+# Ignore build output
+dist/
+
+# Ignore any compiled binaries or executables
+*.beam
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore temporary files
+*.swp
+*~
+
+# Ignore database files
+*.db
+
+# Ignore npm debug files
+npm-debug.log*
+
+# Ignore yarn debug files
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore Visual Studio Code configuration
+.vscode/
+
+# Ignore assets that might change or be generated
+public/assets/
