@@ -1,9 +1,6 @@
 # Ignore Node.js modules
 node_modules/
 
-# Ignore package lock files
-package-lock.json
-
 # Ignore environment-specific configuration files
 .env
 
